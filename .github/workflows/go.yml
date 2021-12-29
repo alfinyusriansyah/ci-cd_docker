@@ -28,7 +28,7 @@ jobs:
       uses : docker/login-action@v1
       with:
         username: ${{ secrets.DCHUB_USERNAME }}
-        password: ${{ secrets.DCKHUB_TOKEN }}
+        password: ${{ secrets.DCHUB_TOKEN }}
 
     - name : bulid and push
       id : docker_build
